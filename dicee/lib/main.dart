@@ -34,28 +34,27 @@ class _DicePageState extends State<DicePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Row(
-        children: <Widget>[
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(20.0, 0.0, 0.0, 0.0),
-              child: FlatButton(
+    return FlatButton(
+      splashColor: Colors.transparent,
+      highlightColor: Colors.transparent,
+      onPressed: rollDice,
+      child: Center(
+        child: Row(
+          children: <Widget>[
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(20.0, 0.0, 5.0, 0.0),
                 child: Image.asset('images/dice$leftDiceNumber.png'),
-                onPressed: rollDice,
               ),
             ),
-          ),
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(0.0, 0.0, 20.0, 0.0),
-              child: FlatButton(
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(5.0, 0.0, 20.0, 0.0),
                 child: Image.asset('images/dice$rightDiceNumber.png'),
-                onPressed: rollDice,
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
