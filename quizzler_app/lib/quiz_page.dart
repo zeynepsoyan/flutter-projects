@@ -17,7 +17,7 @@ class _QuizPageState extends State<QuizPage> {
   _QuizPageState(this.index) : quizBrain = new QuizBrain(index);
 
   List<Icon> scoreKeeper = [];
-  int score;
+  int score = 0;
 
   void checkAnswer(bool userPickedAnswer) {
     bool correctAnswer = quizBrain.getCorrectAnswer();
