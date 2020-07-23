@@ -37,15 +37,17 @@ List generalKnowledge() {
 List vocabulary() {
   List<Question> _vocabulary = [
     Question('A river is bigger than a stream.', true),
-    Question('There are one thousand years in a CENTURY.', false),
-    Question('FOUNDED is the past tense of FOUND.', true),
-    Question('ANSWER can be used as a noun and a verb.', true),
-    Question('SCARLET is a brilliant red colour.', true),
-    Question('USED TO DOING and USED TO DO mean the same thing.', false),
-    Question('You can use IMPROVE as a noun and as a verb.', false),
-    Question('DOZEN is equivalent to 20.', false),
-    Question('The past tense of FIND is FOUND.', true),
-    Question(' EQUIVALENT TO is (more or less) the same as EQUAL TO.', true),
+    Question('There are one thousand years in a century.', false),
+    Question('Founded is the past tense of found.', true),
+    Question('/"Answer/" can be used as a noun and a verb.', true),
+    Question('Scarlet is a brilliant red colour.', true),
+    Question(
+        '/"Used to doing/" and /"used to do/" mean the same thing.', false),
+    Question('You can use /"improve/" as a noun and as a verb.', false),
+    Question('Dozen is equivalent to 20.', false),
+    Question('The past tense of find is found.', true),
+    Question(
+        '/"Equivalent to/" is (more or less) the same as /"equal to/".', true),
   ];
 
   return _vocabulary;
